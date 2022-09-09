@@ -10,10 +10,10 @@
             <header>Documentacion C</header>
             <ul>
                 <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
-                <li><a class="nav-link" href="#Palabras_claves">Palabras claves</a></li>
-                <li><a class="nav-link" href="#Tipos_de_datos">Tipos de datos</a></li>
+                <li><a class="nav-link" href="#Propiedades">Propiedades</a></li>
+                <li><a class="nav-link" href="#Hola_mundo">Hola Mundo</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
                 <li><a class="nav-link" href="#Funciones">Funciones</a></li>
-                <li><a class="nav-link" href="#Apuntadores">Apuntadores</a></li>
             </ul>
         </nav>
         <main id="main-doc">
@@ -21,70 +21,81 @@
                 <header>Introduccion</header>
                 <article>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolor nesciunt quos culpa! Saepe voluptatem eligendi debitis laborum, hic, praesentium autem deserunt sequi quisquam ad eaque unde fugit quos. Doloremque.
+                        C es un lenguaje de programación de propósito general. originalmente desarrollado por Dennis Ritchie entre 1969 y 1972 en los Laboratorios Bell, como evolución del anterior lenguaje B, a su vez basado en BCPL.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur<code>void foo(void) { ... }</code> adipisicing elit. Laborum dolore commodi consequatur deleniti tenetur, dolores libero officia, voluptatum natus totam, architecto dolorum at rerum provident nesciunt veniam est suscipit harum.
+                        Se trata de un lenguaje de tipos de datos estáticos, débilmente tipado, de medio nivel, que dispone de las estructuras típicas de los lenguajes de alto nivel pero, a su vez, dispone de construcciones del lenguaje que permiten un control a bajo nivel. Los compiladores suelen ofrecer extensiones al lenguaje que posibilitan mezclar código en ensamblador con código C o acceder directamente a memoria o dispositivos periféricos.
                     </p>
-                    <li>
-
-                    </li>
                 </article>
             </section>
-            <section class="main-section" id="Palabras_claves">
-                <header>Palabras claves</header>
+            <section class="main-section" id="Propiedades">
+                <header>Propiedades</header>
+                <article>
+                    <li>
+                        Núcleo del lenguaje simple, con funcionalidades añadidas importantes, como funciones matemáticas y de gestión de archivos, proporcionadas por bibliotecas.
+                    </li>
+                    <li>
+                        Es un lenguaje estructurado, i.e. tiene estructuras de control y tipos de datos estructurados definidos por el programador a partir de los tipos atómicos típicos y mediante arreglos, estructuras, uniones y punteros, incluidos los que apuntan a una función.
+                    </li>
+                    <li>
+                        En su primera edición no había advertencias sobre asignar a una variable un valor un tipo distinto. Por lo que había un programa llamado lint que detectaba este tipo de errores. Actualmente los compiladores pueden detectar inconsistencias de tipos y otros errores.
+                    </li>
+                    <li>
+                        Usa un lenguaje de preprocesado, el preprocesador de C, para tareas como definir macros e incluir múltiples archivos de código fuente.
+                    </li>
+                    <li>
+                        Acceso a memoria de bajo nivel mediante el uso de punteros.
+                    </li>
+                    <li>
+                        Un conjunto reducido de palabras clave.
+                    </li>
+
+                </article>
+            </section>
+
+            <section class="main-section" id="Hola_mundo">
+                <header>Hola Mundo</header>
+                <article>
+                    <p>Para comenzar a escribir codigo en C, abre tu editor favorito y escribe tu primer "Hola Mundo":
+                        <code>// necesario para utilizar printf()
+                            # include &ltstdio.h&gt
+                            
+                            int main(void) {
+                                &nbsp;&nbsp;&nbsp;&nbsp;printf("Hola Mundo\n");
+                                &nbsp;&nbsp;&nbsp;&nbsp;return 0;
+                            }</code>
+                        Selecciona el código y pegalo para compilar tu primer programa en C.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
                 <article>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cumque, ipsa atque sed, vero harum voluptatem, minima aut odio optio eveniet reprehenderit doloremque earum ratione necessitatibus? Totam nesciunt tempore expedita?
+                        Conceptualmente, desde el punto de vista de un programador, una variable es una entidad cuyo valor puede cambiar a lo largo de la ejecución de un programa.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quasi odio provident esse cupiditate quam voluptatum nobis odit voluptatem. Cupiditate magni illum odio debitis porro tempora itaque eius ad facilis.
+                        En un nivel más lógico, una variable ocupa un espacio de memoria reservado en el ordenador para contener sus valores durante la ejecución de un programa. Cada variable debe pertenecer a un tipo determinado, y ese tipo determina, por una parte, el tamaño del espacio de memoria ocupado por la variable, y por otra, el modo en que se manipulará esa memoria por el ordenador.
+                        
                     </p>
-                    <li>
-
-                    </li>
+                    <p>
+                        Declaración:
+                        <code>[signed|unsigned] &lttipo&gt &ltidentificador&gt[,&ltidentificador2&gt[,&ltidentificador3&gt]...];</code>
+                    </p>
                 </article>
             </section>
-            <section class="main-section" id="Tipos_de_datos">
-                <header>Tipos de datos</header>
-                <article>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, <code>void foo(void) { ... }</code>adipisicing elit. Doloremque expedita itaque animi consequuntur assumenda numquam sapiente necessitatibus eius consectetur magnam voluptatem nemo incidunt consequatur placeat, corporis, velit ducimus iste similique?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur <code>void foo(void) { ... }</code>adipisicing elit. Soluta architecto iusto blanditiis error, at saepe esse, alias unde voluptatibus facilis eveniet obcaecati mollitia distinctio nostrum earum quo ullam, inventore incidunt.
-                    </p>
-                    <li>
 
-                    </li>
-                </article>
-            </section>
             <section class="main-section" id="Funciones">
                 <header>Funciones</header>
                 <article>
                     <p>
-                        Lorem ipsum dolor sit, <code>void foo(void) { ... }</code> amet consectetur adipisicing elit. Dolorem iure sapiente adipisci deleniti obcaecati consequatur reprehenderit repudiandae quod amet quibusdam dolor, aspernatur nulla doloribus accusantium minima ducimus quis fuga voluptates?
+                        Las funciones son un conjunto de instrucciones que realizan una tarea específica. En general toman ciertos valores de entrada, llamados parámetros y proporcionan un valor de salida o valor de retorno; aunque en C, tanto unos como el otro son opcionales, y pueden no existir.
                     </p>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestiae accusantium, obcaecati hic eos iure fuga possimus rem ad, numquam maxime sint sequi mollitia reprehenderit minus esse eligendi facilis fugit.
+                        En C es obligatorio usar prototipos. Un prototipo es una declaración de una función. Consiste en una presentación de la función, exactamente con la misma estructura que la definición, pero sin cuerpo y terminada con un ";". La estructura de un prototipo es:
+                        <code>[extern|static] &lttipo_valor_retorno&gt [&ltmodificadores&gt] &ltidentificador&gt(&ltlista_parámetros&gt); </code>
                     </p>
-                    <li>
-
-                    </li>
-                </article>
-            </section>
-            <section class="main-section" id="Apuntadores">
-                <header>Apuntadores</header>
-                <article>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur <code>void foo(void) { ... }</code>adipisicing elit. Modi quaerat totam quos officia, doloremque illo molestiae quasi ipsa tenetur libero iusto! Eligendi laudantium architecto possimus nesciunt, incidunt ratione quae quibusdam?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta vitae, tempore nihil perspiciatis unde similique, quae sint, doloremque dolores molestias corrupti fugiat dignissimos itaque officiis possimus obcaecati quidem laboriosam maiores!
-                    </p>
-                    <li>
-
-                    </li>
                 </article>
             </section>
         </main>
